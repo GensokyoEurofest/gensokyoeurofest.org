@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config.title }}</title>
+    {% include "og_tags.html" %}
+  </head>
+  <body class="is-fullheight">
+    <div class="header">
+      {% include "nav.html" %}
+      {% block content %}
+      {% endblock content %}
+    </div>
+    {% include "footer.html" %}
+  </body>
+</html>
